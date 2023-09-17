@@ -1,8 +1,6 @@
 
 
 // ** getComputerChoice randomly selects between `rock` `paper` `scissors` and returns that string **
-// getComputerChoice() 👉 'Rock'
-// getComputerChoice() 👉 'Scissors'
 function getComputerChoice() {
     let rpsChoices = ['Rock', 'Paper', 'Scissors']
     let computerChoice = rpsChoices[Math.floor(Math.random() * 3)]
@@ -10,9 +8,7 @@ function getComputerChoice() {
   }
   
   // ** getResult compares playerChoice & computerChoice and returns the score accordingly **
-  // human wins - getResult('Rock', 'Scissors') 👉 1
-  // human loses - getResult('Scissors', 'Rock') 👉 -1
-  // human draws - getResult('Rock', 'Rock') 👉 0
+ 
   function getResult(playerChoice, computerChoice) {
     // return the result of score based on if you won, drew, or lost
     
@@ -43,9 +39,7 @@ function getComputerChoice() {
   
   // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
   function showResult(score, playerChoice, computerChoice) {
-    // Hint: on a score of -1
-    // You should do result.innerText = 'You Lose!'
-    // Don't forget to grab the div with the 'result' id!
+   
     
     let result = document.getElementById('result')
     switch (score) {
